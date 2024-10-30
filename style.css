@@ -619,7 +619,7 @@ a.button {
 	color: rgb(122, 31, 12);
 	position: absolute;
 	top: 1.7vh;
-	left: 2vw;
+	left: 60.5vw;
 	font-size: 3vw;
 	font-weight: bold;
 	/*z-index: 999;*/
@@ -631,6 +631,25 @@ a.button {
 	text-decoration: none;
 	cursor: pointer;
 }
+
+/* The Play Button for Modal Content */
+.modal-play-left {
+	color: rgb(122, 31, 12);
+	position: absolute;
+	top: 1.7vh;
+	left: 2vw;
+	font-size: 3vw;
+	font-weight: bold;
+	/*z-index: 999;*/
+}
+
+.modal-play-left:hover,
+.modal-play-left:focus {
+	color: #a52d08;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 
 .mySlides {
 	display: none;

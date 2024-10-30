@@ -5,6 +5,7 @@
 
 		<link href="style.css" rel="stylesheet" />
 		<link href="style-slideshow.css" rel="stylesheet" />
+		<link href="style-slideshow-double.css" rel="stylesheet" />
 		<link href="tooltip.css" rel="stylesheet" />
 		<link href="style-modal-split.css" rel="stylesheet" />
 		<meta
@@ -164,510 +165,300 @@
 						<button
 							class="center-items right-nav-buttons clickable"
 							type="button"
-							onClick="PlayAndShow('audio1-0', 'text1-0', 'play1-0')"
+							onClick="PlayAndShow('audio1-1', 'text1-1', 'play1-1')"
 							style="position: absolute; top: 5vw; left: 89vw"
 						>
 							<img
-								id="play1-0"
+								id="play1-1"
 								class="audio-button-image clickable"
 								src="nav-images/play-g79150a13d_1280.png"
 							/>
-							<h6>Introduction</h6>
+							<h6>Thanksgiving Article</h6>
 						</button>
 
 						<button
 							class="center-items right-nav-buttons clickable"
 							type="button"
-							onClick="PlayAndShow('audio2-0', 'text2-0', 'play2-0')"
-							style="position: absolute; top: 21vw; left: 89vw"
-						>
-							<img
-								id="play2-0"
-								class="audio-button-image clickable"
-								src="nav-images/play-g79150a13d_1280.png"
-							/>
-							<h6>Challenge</h6>
-						</button>
-
-						<button
-							class="center-items right-nav-buttons clickable"
-							type="button"
-							onClick="PlayAndShow('audio3-1', 'text3-1', 'play3-1')"
+							onClick="PlayAndShow('audio2-1', 'text2-1', 'play2-1')"
 							style="position: absolute; top: 13vw; left: 89vw"
 						>
 							<img
-								id="play3-1"
+								id="play2-1"
 								class="audio-button-image clickable"
 								src="nav-images/play-g79150a13d_1280.png"
 							/>
-							<h6>Gallery</h6>
+							<h6>Food Challenge Article</h6>
 						</button>
 
 						<!-- Modal Text -->
 
-						<div class="items hidden-text" id="text1-0">
-							<!-- Modal content -->
-							<div class="modal-content">
-								<div class="modal-header">
-									<span
-										class="close clickable"
-										onClick="ResetPlayAndShow('audio1-0', 'text1-0', 'play1-0'), ResetPlayAndShow('audio1-0', 'text1-0', 'play1-0a')"
-										>&times;</span
-									>
-									<span
-										class="modal-play clickable"
-										onClick="PlaySound('audio1-0', 'play1-0a')"
-										><img
-											id="play1-0a"
-											class="audio-button-image clickable"
-											src="nav-images/play-g79150a13d_1280.png"
-									/></span>
-								</div>
-
-								<div class="modal-body">
-									<h3>The World's Hardest Desserts</h3>
-									<p
-										style="
-											font-size: 3vh;
-											text-align: left;
-											text-indent: 0.9vw;
-											margin: 1vh;
-											padding: 1vh;
-										"
-									>
-										Ice cream.
-										<span class="tooltip"
-											>Meringue<span class="tooltiptext"
-												>メレンゲ: a kind of food made from whipped egg
-												whites</span
-											></span
-										>. Cake. Each of these foods is delicious. Put them
-										together, and it becomes Baked Alaska, an
-										<span class="tooltip"
-											>incredible<span class="tooltiptext"
-												>素晴らしい: great, amazing</span
-											></span
-										>
-										dessert first made in 1867. That’s the year the USA bought
-										Alaska from Russia.
-									</p>
-									<p
-										style="
-											font-size: 3vh;
-											text-align: left;
-											text-indent: 0.9vw;
-											margin: 1vh;
-											padding: 1vh;
-										"
-									>
-										To make Baked Alaska, you start with a layer of sponge cake.
-										You put ice cream on top. You
-										<span class="tooltip"
-											>whip<span class="tooltiptext"
-												>泡立てる: to beat, to mix</span
-											></span
-										>
-										egg whites and sugar into meringue and put that all around
-										your ice cream and cake. Then you bake that in a very hot
-										oven for five minutes. If you do it right, you’ll have an
-										amazing combination of hot,
-										<span class="tooltip"
-											>crispy<span class="tooltiptext"
-												>サクサク: crunchy
-												<i>(like in good fried chicken)</i></span
-											></span
-										>
-										meringue,
-										<span class="tooltip"
-											>fluffy<span class="tooltiptext"
-												>ふわふわ: light, full of air <i>(like bread)</i></span
-											></span
-										>
-										cake, and cold ice cream.
-									</p>
-									<p
-										style="
-											font-size: 3vh;
-											text-align: left;
-											text-indent: 0.9vw;
-											margin: 1vh;
-											padding: 1vh;
-										"
-									>
-										It sounds easy, but Baked Alaska is actually one of the most
-										difficult desserts to make in the world. The cake can be too
-										<span class="tooltip"
-											>dry<span class="tooltiptext"
-												>乾いた: having no water</span
-											></span
-										>
-										or too
-										<span class="tooltip"
-											>wet<span class="tooltiptext"
-												>濡れた: full of water</span
-											></span
-										>. The meringue can be too soft. And the ice cream
-										<span class="tooltip"
-											>melts<span class="tooltiptext"
-												>溶ける: like when ice becomes water</span
-											></span
-										>
-										very quickly! It’s very easy to make a sweet but
-										<span class="tooltip"
-											>disappointing<span class="tooltiptext"
-												>残念な: something that makes you sad</span
-											></span
-										>
-										<span class="tooltip"
-											>mess<span class="tooltiptext"
-												>失敗作 (台無し、乱雑): something that is difficult or
-												dirty</span
-											></span
-										>
-										when you make Baked Alaska. This is why it is a challenge
-										for bakers of all skills.
-									</p>
-									<p
-										style="
-											font-size: 3vh;
-											text-align: left;
-											text-indent: 0.9vw;
-											margin: 1vh;
-											padding: 1vh;
-										"
-									>
-										The world is full of difficult desserts, including baklava,
-										pavlova, macaroons, soufflés, baumkuchen, and croquembouche.
-										What do you think? Would you like to try making some of
-										these difficult, delicious desserts?
-									</p>
-								</div>
-								<div class="modal-footer"></div>
-							</div>
-						</div>
-
-						<div class="items hidden-text" id="text2-0">
-							<!-- Modal content -->
-							<div class="modal-content">
-								<div class="modal-header">
-									<span
-										class="close clickable"
-										onClick="ResetPlayAndShow('audio2-0', 'text2-0', 'play2-0')"
-										>&times;</span
-									>
-
-								</div>
-
-								<div class="modal-body">
-									<h3>
-										Baked Alaska Challenge: Let's try making Baked Alaska!
-									</h3>
-
-									<div class="modal-parent">
-										<div class="modal-left-side">
-											<h4>Ingredients</h4>
-											<p
-												style="font-size: 2.5vh; text-align: left; margin: 1vh"
-											>
-												1. 1.5 kg of ice cream<br /><br />
-												2. 450 grams of pound cake<br /><br />
-												3. 6 egg whites<br /><br />
-												4. 150 grams of sugar<br /><br />
-												5. 4 mL of cream of tartar<br /><br /><br />
-											</p>
-											<p
-												style="
-													font-size: 2.8vh;
-													text-align: left;
-													margin: 1vh;
-													text-align: center;
-												"
-											>
-												Read the whole recipe at
-												<a
-													href="https://www.spendwithpennies.com/easy-baked-alaska/"
-													target="bakedalaska"
-													style="color: #290098"
-													>SpendWithPennies</a
-												>!
-											</p>
-										</div>
-										<div class="modal-right-side">
-											<h4>Instructions</h4>
-											<p
-												style="
-													font-size: 2.5vh;
-													text-align: left;
-													padding: 0 0 0 1vh;
-												"
-											>
-												1. Cut pound cake into 3-cm thick slices. Put the slices
-												into a large bowl. Freeze the bowl and cake.
-											</p>
-											<p
-												style="
-													font-size: 2.5vh;
-													text-align: left;
-													padding: 0 0 0 1vh;
-												"
-											>
-												2. Scoop some ice cream onto the cake in the bowl. Push
-												down on the ice cream so it sticks on the cake. Freeze
-												it again.
-											</p>
-											<p
-												style="
-													font-size: 2.5vh;
-													text-align: left;
-													padding: 0 0 0 1vh;
-												"
-											>
-												3. Put the egg whites and cream of tartar in a bowl.
-												Beat it with a mixer for about three minutes. Add sugar
-												little by little and beat until it gets a little hard.
-											</p>
-											<p
-												style="
-													font-size: 2.5vh;
-													text-align: left;
-													padding: 0 0 0 1vh;
-												"
-											>
-												4. Cover the ice cream and pound cake with meringue.
-												Freeze it again.
-											</p>
-											<p
-												style="
-													font-size: 2.5vh;
-													text-align: left;
-													padding: 0 0 0 1vh;
-												"
-											>
-												5. Bake the Baked Alaska in a hot oven at 260 degrees
-												Celsius for 3 to 5 minutes. Take it out when the
-												meringue is light brown.
-											</p>
-											<p
-												style="
-													font-size: 2.5vh;
-													text-align: left;
-													padding: 0 0 0 1vh;
-												"
-											>
-												6. Let it rest for 5 minutes, then cut it and enjoy! If
-												you did it right, it will be crispy, creamy, hot, cold,
-												and delicious.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="modal-footer"></div>
-							</div>
-						</div>
-
-						<div class="items hidden-text" id="text3-1">
+						<div class="items hidden-text" id="text1-1">
 							<!-- Modal content -->
 							<div class="modal-content-slideshow">
 								<div class="modal-header">
 									<span
 										class="close clickable"
-										onClick="ResetPlayAndShow('audio3-1', 'text3-1', 'play3-1')"
+										onClick="ResetPlayAndShow('audio1-1', 'text1-1', 'play1-1')"
 										>&times;</span
 									>
 								</div>
 
 								<div class="modal-body">
 									<!-- Add the image slideshow here -->
-									<div id="slideshow-container" class="slideshow-container">
+									<div id="slideshow-container1" class="slideshow-container">
 										<!-- Full-width images with number text -->
-										<div class="mySlides">
+										<div class="mySlides1">
 											<div class="slide-content">
 												<img
-													src="Web/3/bakedalaska1.jpg"
+													src="Web/3 - Thanksgiving/1.jpg"
 													class="slide-image"
 													style="height: 90vh; object-fit: cover"
-													alt="Baked Alaska"
+													alt="A Painting of The First Thanksgiving"
 												/>
 												<div class="caption-container">
-													<h4>Baked Alaska</h4>
-													<p style="font-size: 3vh; line-height: 2">
-														Baked Alaska was first made to celebrate the USA's
-														purchase of Alaska from Russia in 1867.
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1a', 'play1-1a')"
+														><img
+															id="play1-1a"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<h4>The Tradition of Thanksgiving</h4>
+													<p style="font-size: 3vh; line-height: 1.4">
+														A long time ago, people came from England to North
+														America. They wanted a new life and new chances*.
+														But it was very, very hard. They needed help from
+														the Native Americans* who lived there. The first
+														Thanksgiving in 1621 was a big meal* to say thank
+														you for the food that helped them live.
 													</p>
-													<div class="numbertext">1 / 9</div>
+													<p style="font-size: 2vh; line-height: 1.7">
+														* chance: 機会<br />
+														* Native American: アメリカ先住民 <br />
+														* meal: 食事<br />
+													</p>
+													<div class="numbertext">1 / 5</div>
 												</div>
 											</div>
 										</div>
 
-										<div class="mySlides">
+										<div class="mySlides1">
 											<div class="slide-content">
 												<img
-													src="Web/3/bakedalaska2.jpg"
+													src="Web/3 - Thanksgiving/2.jpg"
 													class="slide-image"
 													style="height: 90vh; object-fit: cover"
-													alt="Baked Alaska"
+													alt="A Turkey with Stuffing"
 												/>
 												<div class="caption-container">
-													<h4>Baked Alaska</h4>
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1b', 'play1-1b')"
+														><img
+															id="play1-1b"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
 													<p style="font-size: 3vh; line-height: 2">
-														Baked Alaska is made from layers of ice cream and
-														sponge cake and covered with meringue, or whipped
-														egg whites. Meringue is also used in French macarons
-														and Pavlova desserts.
+														Today, Thanksgiving is a time for family to come
+														together* and have a big meal. People have turkey,
+														stuffing, and pumpkin pie. They also watch football
+														and parades on TV. Many people also help others or
+														give food to people in need*.
 													</p>
-													<div class="numbertext">2 / 9</div>
+													<p style="font-size: 2vh; line-height: 2">
+														* come together: 集まる<br />
+														* people in need: 困っている人々<br />
+													</p>
+													<div class="numbertext">2 / 5</div>
 												</div>
 											</div>
 										</div>
 
-										<div class="mySlides">
+										<div class="mySlides1">
 											<div class="slide-content">
 												<img
-													src="Web/3/bakedalaska3.jpg"
+													src="Web/3 - Thanksgiving/3.png"
 													class="slide-image"
 													style="height: 90vh; object-fit: cover"
-													alt="Baked Alaska"
+													alt="Japan"
 												/>
 												<div class="caption-container">
-													<h4>Baked Alaska</h4>
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1c', 'play1-1c')"
+														><img
+															id="play1-1c"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
 													<p style="font-size: 3vh; line-height: 2">
-														When the dessert is heated, the meringue outside
-														protects the ice cream inside. It becomes crispy and
-														hot, but the ice cream stays cold and delicious.
+														In Japan, we also have a kind of Thanksgiving Day,
+														too. November 23rd is Labor Thanksgiving Day*. We
+														say thanks to the people who work for us and our
+														society*.
 													</p>
-													<div class="numbertext">3 / 9</div>
+													<p style="font-size: 2vh; line-height: 2">
+														* Labor Thanksgiving Day: 勤労感謝の日<br />
+														* society: 社会<br />
+													</p>
+													<div class="numbertext">3 / 5</div>
 												</div>
 											</div>
 										</div>
 
-										<div class="mySlides">
+										<div class="mySlides1">
 											<div class="slide-content">
 												<img
-													src="Web/3/baklava.jpg"
+													src="Web/3 - Thanksgiving/4a.jpg"
 													class="slide-image"
 													style="height: 90vh; object-fit: cover"
-													alt="Baklava"
+													alt="Roast Turkey"
 												/>
 												<div class="caption-container">
-													<h4>Baklava</h4>
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1da', 'play1-1da')"
+														><img
+															id="play1-1da"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
 													<p style="font-size: 3vh; line-height: 2">
-														Baklava is a dessert from Turkey (Türkiye). It is
-														made of sweet layers of light pastry and crunchy
-														nuts. It is difficult to make because of the filo
-														pastry it uses. Filo pastry is made with very thing
-														layers of dough brushed with butter.
+														This is a roast turkey. It's one of the traditional
+														Thanksgiving foods.
 													</p>
-													<div class="numbertext">4 / 9</div>
+													<p style="font-size: 2vh; line-height: 2">
+														&nbsp;<br />
+													</p>
+													<div class="numbertext">4a / 5</div>
 												</div>
 											</div>
 										</div>
 
-										<div class="mySlides">
+										<div class="mySlides1">
 											<div class="slide-content">
 												<img
-													src="Web/3/pavlova.jpg"
+													src="Web/3 - Thanksgiving/4b.jpg"
 													class="slide-image"
 													style="height: 90vh; object-fit: cover"
-													alt="Pavlova"
+													alt="Mashed Potatoes"
 												/>
 												<div class="caption-container">
-													<h4>Pavlova</h4>
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1db', 'play1-1db')"
+														><img
+															id="play1-1db"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
 													<p style="font-size: 3vh; line-height: 2">
-														Pavlova is a meringue cake with a crisp outside and
-														soft inside. Some people say it's from Australia,
-														and some people say it's from New Zealand. This
-														dessert was made for the dancer Anna Pavlova when
-														she came to tour the two countries.
+														These are mashed potatoes. We mash potatoes together
+														with milk, salt, and butter. They are another of the
+														traditional Thanksgiving foods.
 													</p>
-													<div class="numbertext">5 / 9</div>
+													<p style="font-size: 2vh; line-height: 2">
+														&nbsp;<br />
+													</p>
+													<div class="numbertext">4b / 5</div>
 												</div>
 											</div>
 										</div>
 
-										<div class="mySlides">
+										<div class="mySlides1">
 											<div class="slide-content">
 												<img
-													src="Web/3/macaron.jpg"
+													src="Web/3 - Thanksgiving/4c.jpg"
 													class="slide-image"
 													style="height: 90vh; object-fit: cover"
-													alt="Macaron"
+													alt="Green Beans"
 												/>
 												<div class="caption-container">
-													<h4>Macaron</h4>
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1dc', 'play1-1dc')"
+														><img
+															id="play1-1dc"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
 													<p style="font-size: 3vh; line-height: 2">
-														Macarons are meringue cookies sandwiching cream or
-														jam. These French desserts are made from whipped egg
-														whites.
+														These are green beans. We usually serve them with
+														crispy fried onions on top. They are another of the
+														traditional Thanksgiving foods.
 													</p>
-													<div class="numbertext">6 / 9</div>
+													<p style="font-size: 2vh; line-height: 2">
+														&nbsp;<br /><br />
+													</p>
+													<div class="numbertext">4c / 5</div>
 												</div>
 											</div>
 										</div>
 
-										<div class="mySlides">
+										<div class="mySlides1">
 											<div class="slide-content">
 												<img
-													src="/Web/3/souffle.jpg"
+													src="Web/3 - Thanksgiving/4d.jpg"
 													class="slide-image"
 													style="height: 90vh; object-fit: cover"
-													alt="Souffle"
+													alt="Pumpkin Pie"
 												/>
 												<div class="caption-container">
-													<h4>Souffle</h4>
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1dd', 'play1-1dd')"
+														><img
+															id="play1-1dd"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
 													<p style="font-size: 3vh; line-height: 2">
-														A souffle is a baked dish of sweet and fluffy
-														whipped eggs from France, a little like custard.
-														They can also be salty and savory instead of sweet.
+														This is pumpkin pie. It's a delicious traditional
+														Thanksgiving food.
 													</p>
-													<div class="numbertext">7 / 9</div>
+													<p style="font-size: 2vh; line-height: 2">
+														&nbsp;<br /><br />
+													</p>
+													<div class="numbertext">4d / 5</div>
 												</div>
 											</div>
 										</div>
 
-										<div class="mySlides">
+										<div class="mySlides1">
 											<div class="slide-content">
 												<img
-													src="/Web/3/baumkuchen.jpg"
+													src="Web/3 - Thanksgiving/5.jpeg"
 													class="slide-image"
 													style="height: 90vh; object-fit: cover"
-													alt="Baumkuchen"
+													alt="A Thanksgiving Dinner"
 												/>
 												<div class="caption-container">
-													<h4>Baumkuchen</h4>
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1e', 'play1-1e')"
+														><img
+															id="play1-1e"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
 													<p style="font-size: 3vh; line-height: 2">
-														Baumkuchen are German desserts made of layers and
-														layers of cake. Each layer is added and baked as it
-														is turned around a spit in a special oven. It takes
-														a long, long time!
+														This year, let’s try saying “thanks” to all the
+														people that help us in our society, especially* all
+														our families and friends.
 													</p>
-													<div class="numbertext">8 / 9</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="mySlides">
-											<div class="slide-content">
-												<img
-													src="/Web/3/croquembouche.jpg"
-													class="slide-image"
-													style="height: 90vh; object-fit: cover"
-													alt="Croquembouche"
-												/>
-												<div class="caption-container">
-													<h4>Croquembouche</h4>
-													<p style="font-size: 3vh; line-height: 1.5">
-														Croquembouche is a French dessert. It is a tower of
-														choux crème puffs and caramel threads. It is also
-														very difficult to make choux crème puffs well.
+													<p style="font-size: 2vh; line-height: 2">
+														* especially: 特に<br />
 													</p>
-													<div class="numbertext">9 / 9</div>
+													<div class="numbertext">5 / 5</div>
 												</div>
 											</div>
 										</div>
 
 										<!-- Navigation buttons -->
-										<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-										<a class="next" onclick="plusSlides(1)">&#10095;</a>
+										<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides1(1)">&#10095;</a>
 
 										<br />
 									</div>
@@ -676,75 +467,369 @@
 									<!-- Thumbnails -->
 									<div class="thumbnail-container">
 										<img
-											class="thumbnail"
-											src="/Web/3/bakedalaska1.jpg"
-											alt="Baked Alaska"
-											onclick="currentSlide(1)"
+											class="thumbnail1 thumbnail"
+											src="Web/3 - Thanksgiving/1.jpg"
+											alt="A Painting of The First Thanksgiving"
+											onclick="currentSlide1(1)"
 										/>
 										<img
-											class="thumbnail"
-											src="/Web/3/bakedalaska2.jpg"
-											alt="Baked Alaska"
-											onclick="currentSlide(2)"
+											class="thumbnail1 thumbnail"
+											src="Web/3 - Thanksgiving/2.jpg"
+											alt="A Turkey with Stuffing"
+											onclick="currentSlide1(2)"
 										/>
 										<img
-											class="thumbnail"
-											src="/Web/3/bakedalaska3.jpg"
-											alt="Baked Alaska"
-											onclick="currentSlide(3)"
+											class="thumbnail1 thumbnail"
+											src="Web/3 - Thanksgiving/3.png"
+											alt="Japan"
+											onclick="currentSlide1(3)"
 										/>
 										<img
-											class="thumbnail"
-											src="/Web/3/baklava.jpg"
-											alt="Baklava"
-											onclick="currentSlide(4)"
+											class="thumbnail1 thumbnail"
+											src="Web/3 - Thanksgiving/4a.jpg"
+											alt="Roast Turkey"
+											onclick="currentSlide1(4)"
 										/>
 										<img
-											class="thumbnail"
-											src="/Web/3/pavlova.jpg"
-											alt="Pavlova"
-											onclick="currentSlide(5)"
+											class="thumbnail1 thumbnail"
+											src="Web/3 - Thanksgiving/4b.jpg"
+											alt="Mashed Potatoes"
+											onclick="currentSlide1(5)"
 										/>
 										<img
-											class="thumbnail"
-											src="/Web/3/macaron.jpg"
-											alt="Macaron"
-											onclick="currentSlide(6)"
+											class="thumbnail1 thumbnail"
+											src="Web/3 - Thanksgiving/4c.jpg"
+											alt="Green Beans"
+											onclick="currentSlide1(6)"
 										/>
 										<img
-											class="thumbnail"
-											src="/Web/3/souffle.jpg"
-											alt="Soufflé"
-											onclick="currentSlide(7)"
+											class="thumbnail1 thumbnail"
+											src="Web/3 - Thanksgiving/4d.jpg"
+											alt="Pumpkin Pie"
+											onclick="currentSlide1(7)"
 										/>
 										<img
-											class="thumbnail"
-											src="/Web/3/baumkuchen.jpg"
-											alt="Baumkuchen"
-											onclick="currentSlide(8)"
-										/>
-										<img
-											class="thumbnail"
-											src="/Web/3/croquembouche.jpg"
-											alt="Croquembouche"
-											onclick="currentSlide(9)"
+											class="thumbnail1 thumbnail"
+											src="Web/3 - Thanksgiving/5.jpeg"
+											alt="A Thanksgiving Dinner"
+											onclick="currentSlide1(8)"
 										/>
 									</div>
 								</div>
 							</div>
-
-							<!-- Audio -->
-
-							<audio id="audio1-0" class="playondemand">
-								<source src="./audio/audio3-1.mp3" type="audio/mp3" />
-							</audio>
-							<audio id="audio2-0" class="playondemand">
-								<source src="./audio/audio3-2.mp3" type="audio/mp3" />
-							</audio>
-							<audio id="audio3-1" class="playondemand">
-								<source src="./audio/audio3-3.mp3" type="audio/mp3" />
-							</audio>
 						</div>
+
+						<div class="items hidden-text" id="text2-1">
+							<!-- Modal content -->
+							<div class="modal-content-slideshow">
+								<div class="modal-header">
+									<span
+										class="close clickable"
+										onClick="ResetPlayAndShow('audio2-1', 'text2-1', 'play2-1')"
+										>&times;</span
+									>
+								</div>
+
+								<div class="modal-body">
+									<!-- Add the image slideshow here -->
+									<div id="slideshow-container2" class="slideshow-container">
+										<!-- Full-width images with number text -->
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/4 - Food/1.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Someone Eating a Lot of Food"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio2-1a', 'play2-1a')"
+														><img
+															id="play2-1a"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+
+													<p style="font-size: 3vh; line-height: 1.6">
+														Japan is not usually known for overeating*, but some
+														Japanese people have made a sport of* eating a lot,
+														such as Takeru Kobayashi and his amazing ability to
+														eat hot dogs. And even if you are not a food
+														athlete, here are some food challenges* that you can
+														try:
+													</p>
+													<p style="font-size: 1.6vh; line-height: 1.1">
+														* overeating: 食べすぎ<br />
+														* make a sport of: スポーツにする<br />
+														* challenge: 挑戦<br />
+													</p>
+													<div class="numbertext">1 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/4 - Food/2.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Someone Eating a Giant Gyoza"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio2-1b', 'play2-1b')"
+														><img
+															id="play2-1b"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<h4>
+														1. Giant Gyoza Challenge at <i>Kagurazaka Hanten</i>
+													</h4>
+													<p style="font-size: 3vh; line-height: 2">
+														If you can eat a giant <i>gyoza</i> dumpling of 2.5
+														kilograms in one hour, it’s free!
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														&nbsp;<br />
+													</p>
+													<div class="numbertext">2 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/4 - Food/3.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Someone Eating a Lot of Curry and Rice"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio2-1c', 'play2-1c')"
+														><img
+															id="play2-1c"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<h4>
+														2. Curry Challenge at <i>Kanazawa Gold Curry</i>
+													</h4>
+													<p style="font-size: 3vh; line-height: 1.5">
+														If you can eat 10 kg of curry and rice in one hour,
+														you could win 100,000 yen!
+													</p>
+													<p style="font-size: 2vh; line-height: 1.2">
+														&nbsp;<br />
+													</p>
+													<div class="numbertext">3 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/4 - Food/4.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Someone Eating a Lot of Ramen"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio2-1d', 'play2-1d')"
+														><img
+															id="play2-1d"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<h4>
+														3. Ramen Challenge at <i>Umakara Ramen Hyouri</i>
+													</h4>
+													<p style="font-size: 3vh; line-height: 2">
+														If you can eat 7 kg of ramen in 20 minutes, you can
+														get 50,000 yen!
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														&nbsp;<br />
+													</p>
+													<div class="numbertext">4 / 5</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/4 - Food/5.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="A Pie Eating Contest in the USA"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio2-1e', 'play2-1e')"
+														><img
+															id="play2-1e"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<p style="font-size: 3vh; line-height: 2">
+														By the way, this is a pie eating contest. You can't
+														use your hands, and the person that eats the most
+														pies wins!
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														&nbsp;<br />
+													</p>
+													<div class="numbertext">5 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides2">
+											<div class="slide-content">
+												<img
+													src="Web/4 - Food/6.jpg"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+													alt="Someone Eating a Lot of Food"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio2-1e', 'play2-1e')"
+														><img
+															id="play2-1e"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<p style="font-size: 3vh; line-height: 2">
+														These food challenges could be a lot of fun! But on
+														the other hand, maybe it’s better to stick with*
+														regular all-you-can-eat* <i>shabu-shabu</i>,
+														<i>yakiniku</i>, and pizza.
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														* stick with: ～にこだわる（続く）<br />
+														* all-you-can-eat: 食べ放題<br />
+													</p>
+													<div class="numbertext">6 / 6</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- Navigation buttons -->
+										<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+										<br />
+									</div>
+									<div class="modal-footer"></div>
+
+									<!-- Thumbnails -->
+									<div class="thumbnail-container">
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/4 - Food/1.jpg"
+											alt="Someone Eating a Lot of Food"
+											onclick="currentSlide1(1)"
+										/>
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/4 - Food/2.jpg"
+											alt="Someone Eating a Giant Gyoza"
+											onclick="currentSlide1(2)"
+										/>
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/4 - Food/3.jpg"
+											alt="Someone Eating a Lot of Curry and Rice"
+											onclick="currentSlide1(3)"
+										/>
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/4 - Food/4.jpg"
+											alt="Someone Eating a Lot of Ramen"
+											onclick="currentSlide1(4)"
+										/>
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/4 - Food/5.jpg"
+											alt="A Pie Eating Contest in the USA"
+											onclick="currentSlide1(5)"
+										/>
+										<img
+											class="thumbnail2 thumbnail"
+											src="Web/4 - Food/6.jpg"
+											alt="Someone Eating a Lot of Food"
+											onclick="currentSlide1(6)"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Audio -->
+
+						<audio id="audio1-1" class="playondemand">
+							<source src="./audio/audio3-1.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1a" class="playondemand">
+							<source src="./audio/audio3-1a.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1b" class="playondemand">
+							<source src="./audio/audio3-1b.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1c" class="playondemand">
+							<source src="./audio/audio3-1c.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1da" class="playondemand">
+							<source src="./audio/audio3-1da.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1db" class="playondemand">
+							<source src="./audio/audio3-1db.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1dc" class="playondemand">
+							<source src="./audio/audio3-1dc.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1dd" class="playondemand">
+							<source src="./audio/audio3-1dd.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1e" class="playondemand">
+							<source src="./audio/audio3-1e.mp3" type="audio/mp3" />
+						</audio>
+
+						<audio id="audio2-1" class="playondemand">
+							<source src="./audio/audio3-2.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio2-1a" class="playondemand">
+							<source src="./audio/audio3-2a.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio2-1b" class="playondemand">
+							<source src="./audio/audio3-2b.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio2-1c" class="playondemand">
+							<source src="./audio/audio3-2c.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio2-1d" class="playondemand">
+							<source src="./audio/audio3-2d.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio2-1e" class="playondemand">
+							<source src="./audio/audio3-2e.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio2-1f" class="playondemand">
+							<source src="./audio/audio3-2f.mp3" type="audio/mp3" />
+						</audio>
 					</div>
 				</div>
 			</div>
@@ -752,6 +837,6 @@
 		</div>
 		<!-- Closing the viewport div -->
 
-		<script type="text/javascript" src="scripts-slideshow.js"></script>
+		<script type="text/javascript" src="scripts-slideshow-double.js"></script>
 	</body>
 </html>

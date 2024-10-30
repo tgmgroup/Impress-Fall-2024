@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+
+		<link href="style.css" rel="stylesheet" />
+		<link href="style-slideshow.css" rel="stylesheet" />
+		<link href="tooltip.css" rel="stylesheet" />
+		<link href="style-modal-split.css" rel="stylesheet" />
+		<meta
+			name="viewport"
+			content="width=1920, height=1080, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<title>Impress Magazine - Fall, 2024</title>
+		<link rel="icon" type="image/x-icon" href="nav-images/logo.png" />
+		<link id="favicon" rel="shortcut icon" href="nav-images/logo.png" />
+		<script type="text/javascript" src="scripts.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<body>
+		<div id="viewport">
+			<div id="container">
+				<!-- Left Menu -->
+
+				<div class="item sidebar sidebar-left">
+					<div class="item header header-left">
+						<form>
+							<!-- Change Impress button to Full Page button -->
+
+							<!-- <button class="menu-button clickable" type="submit" formaction="index.html" >
+                        <h6>Impress<br>Magazine</h6>
+                    </button> -->
+							<button
+								class="menu-button clickable"
+								type="button"
+								onclick="toggleFullScreen();"
+							>
+								<h5>
+									Impress<small><br />大きく・小さく</small>
+								</h5>
+							</button>
+						</form>
+					</div>
+
+					<div class="left-menu">
+						<div class="left-menu-button">
+							<a href="index.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/front.png"
+									alt="Link to Front Cover"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="1.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/1.png"
+									alt="Link to Page 1"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="1.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/2.png"
+									alt="Link to Page 2"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="3.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/3.png"
+									alt="Link to Page 3"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="3.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/4.png"
+									alt="Link to Page 4"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="5.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/5.png"
+									alt="Link to Page 5"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="5.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/6.png"
+									alt="Link to Page 6"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="cover.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/back.png"
+									alt="Link to Back Cover"
+							/></a>
+						</div>
+						<div class="left-menu-button">
+							<a href="about.html" target="_self"
+								><img
+									class="left-menu-image clickable"
+									src="nav-images/about.png"
+							/></a>
+						</div>
+					</div>
+					<!-- Closing the left-menu div -->
+
+					<div class="item footer footer-left-top">
+						<form>
+							<button
+								class="menu-button-small clickable"
+								type="submit"
+								formaction="3.html"
+							>
+								<h6>&lt; Previous</h6>
+							</button>
+						</form>
+					</div>
+					<div class="item footer footer-left-bottom">
+						<form>
+							<button
+								class="menu-button-small clickable"
+								type="submit"
+								formaction="cover.html"
+							>
+								<h6>Next &gt;</h6>
+							</button>
+						</form>
+					</div>
+				</div>
+				<!-- Closing the sidebar div -->
+
+				<div class="item gap-left"></div>
+
+				<div
+					class="item content-center"
+					style="
+						background-image: url('Web/page056a.jpg');
+						background-size: contain;
+						background-position: left;
+						background-attachment: local;
+						background-repeat: no-repeat;
+						background-color: #000000;
+					"
+				>
+					<div class="center-items">
+						<!-- Buttons -->
+
+						<button
+							class="center-items right-nav-buttons clickable"
+							type="button"
+							onClick="PlayAndShow('audio1-1', 'text1-1', 'play1-1')"
+							style="position: absolute; top: 13vw; left: 89vw"
+						>
+							<img
+								id="play1-1"
+								class="audio-button-image clickable"
+								src="nav-images/play-g79150a13d_1280.png"
+							/>
+							<h6>The Best Places in Gunma</h6>
+						</button>
+
+						<button
+						class="center-items right-nav-buttons clickable"
+						type="button"
+						onClick="PlaySound('audio3-1', 'play3-1')"
+						style="position: absolute; top: 5vw; left: 89vw"
+					>
+						<img
+							id="play3-1"
+							class="audio-button-image clickable"
+							src="nav-images/play-g79150a13d_1280.png"
+						/>
+						<h6>Listen to Music</h6>
+					</button>
+					
+
+
+						<!-- Modal Text -->
+
+						<div class="items hidden-text" id="text1-1">
+							<!-- Modal content -->
+							<div class="modal-content-slideshow">
+								<div class="modal-header">
+									<span
+										class="close clickable"
+										onClick="ResetPlayAndShow('audio1-1', 'text1-1', 'play1-1')"
+										>&times;</span
+									>
+								</div>
+
+								<div class="modal-body">
+									<!-- Add the image slideshow here -->
+									<div id="slideshow-container1" class="slideshow-container">
+										<!-- Full-width images with number text -->
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="Web/5a - Scary Stories/1.jpg"
+													alt="A Scary Woman"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1a', 'play1-1a')"
+														><img
+															id="play1-1a"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<p style="font-size: 3vh; line-height: 2">
+														As the leaves change color and fall fills the air,
+														the night grows longer and gets spookier. Fall is
+														the perfect season for scary events like Halloween.
+														And it’s the perfect season for scary movies. Here
+														are some of the scariest movies in Japan, but watch
+														them with your parents!
+													</p>
+													<div class="numbertext">1 / 5</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="Web/5a - Scary Stories/2.jpg"
+													alt="A Scary Woman Coming Out of a TV"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1b', 'play1-1b')"
+														><img
+															id="play1-1b"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<h4><i>Ring</i></h4>
+													<p style="font-size: 3vh; line-height: 2">
+														Someone gets a mysterious videotape. They watch it.
+														Seven days later… they die. Yoichi watches the
+														video, so his aunt Reiko must learn about Sadako and
+														the mystery of the video to save him.
+													</p>
+
+													<div class="numbertext">2 / 5</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="Web/5a - Scary Stories/3.jpg"
+													alt="A Scary Woman and Lots of Spirals"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1c', 'play1-1c')"
+														><img
+															id="play1-1c"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<h4><i>Uzumaki</i></h4>
+													<p style="font-size: 3vh; line-height: 2">
+														In a town called Kurozu, people start to see strange
+														things. Their heir grows wild and their bodies twist
+														into spirals. Shuichi tries to save his girlfriend
+														Kirie and his town from this curse.
+													</p>
+
+													<div class="numbertext">3 / 5</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="Web/5a - Scary Stories/4.jpg"
+													alt="A Scary Man with a Knife"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1d', 'play1-1d')"
+														><img
+															id="play1-1d"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<p style="font-size: 3vh; line-height: 2">
+														There are a lot of horror movies out there. One
+														famous one from the USA is <i>Friday the 13th</i>.
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														* stay indoors: 家にいる<br />
+													</p>
+													<div class="numbertext">4 / 5</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="mySlides1">
+											<div class="slide-content">
+												<img
+													src="Web/5a - Scary Stories/5.jpg"
+													alt="A Boy with a Balloon in a Scary Place"
+													class="slide-image"
+													style="height: 90vh; object-fit: cover"
+												/>
+												<div class="caption-container">
+													<span
+														class="modal-play clickable"
+														onClick="PlaySound('audio1-1e', 'play1-1e')"
+														><img
+															id="play1-1e"
+															class="audio-button-image clickable"
+															src="nav-images/play-g79150a13d_1280.png"
+													/></span>
+													<p style="font-size: 3vh; line-height: 2">
+														Another is <i>It</i>. But many of us are too
+														young—or too scared—to watch them. Do you like
+														horror movies and why or why not?
+													</p>
+													<p style="font-size: 2vh; line-height: 2">
+														&nbsp;<br />
+													</p>
+													<div class="numbertext">5 / 5</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- Navigation buttons -->
+										<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+										<br />
+									</div>
+									<div class="modal-footer"></div>
+
+									<!-- Thumbnails -->
+									<div class="thumbnail-container">
+										<img
+											class="thumbnail1 thumbnail"
+											src="Web/5a - Scary Stories/1.jpg"
+											alt="A Scary Woman"
+											onclick="currentSlide1(1)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="Web/5a - Scary Stories/2.jpg"
+											alt="A Scary Woman Coming Out of a TV"
+											onclick="currentSlide1(2)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="Web/5a - Scary Stories/3.jpg"
+											alt="A Scary Woman and Lots of Spirals"
+											onclick="currentSlide1(3)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="Web/5a - Scary Stories/4.jpg"
+											alt="A Scary Man with a Knife"
+											onclick="currentSlide1(4)"
+										/>
+										<img
+											class="thumbnail1 thumbnail"
+											src="Web/5a - Scary Stories/5.jpg"
+											alt="A Boy with a Balloon in a Scary Place"
+											onclick="currentSlide1(5)"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Audio -->
+
+						<audio id="audio1-1" class="playondemand">
+							<source src="./audio/audio6-1.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1a" class="playondemand">
+							<source src="./audio/audio6-1a.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1b" class="playondemand">
+							<source src="./audio/audio6-1b.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1c" class="playondemand">
+							<source src="./audio/audio6-1c.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1d" class="playondemand">
+							<source src="./audio/audio6-1d.mp3" type="audio/mp3" />
+						</audio>
+						<audio id="audio1-1e" class="playondemand">
+							<source src="./audio/audio6-1e.mp3" type="audio/mp3" />
+						</audio>
+
+						<audio id="audio3-1" class="playondemand">
+							<source src="./audio/audio6-2.mp3" type="audio/mp3" />
+						</audio>
+					</div>
+				</div>
+			</div>
+			<!-- Closing the container div -->
+		</div>
+		<!-- Closing the viewport div -->
+
+		<script type="text/javascript" src="scripts-slideshow-double.js"></script>
+	</body>
+</html>
