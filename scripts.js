@@ -42,26 +42,33 @@ function PlayAndShow(audioSound, textDiv, audioImage) {
 
 
 function PlaySound(audioSound, audioImage) {
+    // Pause all other audio elements
+    var allAudioElements = document.querySelectorAll('audio');
+    allAudioElements.forEach(function(audio) {
+        if (audio.id !== audioSound) {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    });
+
     var myAudio = document.getElementById(audioSound);
     var myButton = document.getElementById(audioImage);
     
-    if(myAudio.paused) {
+    if (myAudio.paused) {
         myAudio.play();
-        myButton.src= "./nav-images/stop-g55029e04a_1280.png";
-        // myAudio.onended = ResetPlayAndShow(myAudio, myText, myButton);
+        myButton.src = "./nav-images/stop-g55029e04a_1280.png";
+
         myAudio.addEventListener('ended', function() {
             myAudio.pause();
             myAudio.currentTime = 0;
-            myButton.src= "nav-images/play-g79150a13d_1280.png";
-          });
-     }
-    else {
+            myButton.src = "nav-images/play-g79150a13d_1280.png";
+        });
+    } else {
         myAudio.pause();
         myAudio.currentTime = 0;
-        myButton.src= "nav-images/play-g79150a13d_1280.png";
-  }
-
-} 
+        myButton.src = "nav-images/play-g79150a13d_1280.png";
+    }
+}
 
 
 
@@ -91,6 +98,16 @@ function HideDiv(textDiv) {
 }
 
 function ResetPlayAndShow(audioSound, textDiv, audioImage) {
+
+    // Pause all other audio elements
+    var allAudioElements = document.querySelectorAll('audio');
+    allAudioElements.forEach(function(audio) {
+        if (audio.id !== audioSound) {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    });
+
     var myText = document.getElementById(textDiv);
     var myAudio = document.getElementById(audioSound);
     var myButton = document.getElementById(audioImage);
